@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argy News | Register</title>
+
+    <!-- Import CSS file -->
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Import Box-Icons -->
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="wrapper flex-center flex-columm">
+        <form class="formulario">
+            <h1 class="register-title">Register</h1>
+
+            <label for="inputName">Nombre</label>
+            <input type="text" name="name" id="inputName" required>
+
+            <label for="inputLastName">Apellido</label>
+            <input type="text" name="lastName" id="inputLastName" required>
+
+            <label for="inputEmail">Email</label>
+            <input type="email" name="email" id="inputEmail" required>
+
+            <label for="inputPassword">Contraseña</label>
+            <input type="password" name="password" id="inputPassword" required>
+
+            <p class="form-option">¿Estas registrado?
+                <a href="../Login/login.html">Log In</a>
+            </p>
+
+            <button class="btn-register" type="button" id="btnSubmit">Registrarse</button>
+
+        </form>
+
+        <div class="cartel flex-center flex-columm">
+
+        </div>
+
+        <div class="error-cartel"></div>
+    </div>
+
+
+
+
+    <script src="../JS/register.js"></script>
+
+
+
+</body>
+
+</html>

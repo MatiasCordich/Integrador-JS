@@ -1,0 +1,83 @@
+@import url(../CSS/variables.css);
+
+
+
+.wrapper{
+    max-width: 160rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--azul);
+
+}
+
+.login {
+    max-width: 40rem;
+    width: 90%;
+    border-radius: .4rem;
+    gap: 4rem;
+    padding: 2rem;
+    background-color: var(--blanco);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.login h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--rojoSuave);
+    
+}
+
+.label{
+    font-weight: 900;
+    letter-spacing: .1rem;
+    padding-bottom: 1rem;
+}
+
+.input{
+    border: none;
+    padding: 1rem;
+    background: var(--gris);
+    color: var(--rojoSuave);
+    border-radius: .6rem;
+    outline: none
+}
+
+.login-btn{
+    border: none;
+    background: var(--rojoSuave);
+    padding: 1rem 3rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    color: var(--blanco);
+}
+
+
+.cartel-login-succes{
+    display: none;
+    background: var(--blanco);
+    max-width: 50rem;
+    width: 95%;
+    border-radius: .5rem;
+}
+
+.success-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.cartel-login-error{
+    padding-top: 2rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-option a{
+    font-weight: 700;
+}
+
+
+

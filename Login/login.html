@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argy News | Login</title>
+
+    <!-- Import CSS file -->
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Import Box-Icons -->
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="wrapper flex-center flex-columm">
+
+        <form class="login flex-center flex-columm ">
+            <h1>Log In</h1>
+            <label for="inputEmail">
+                <p class="label">Email</p>
+                <input class="input" type="email" name="email" id="inputEmail" required>
+            </label>
+
+            <label for="inputPassword">
+                <p class="label">Password</p>
+                <input class="input" type="password" name="password" id="inputPassword" required>
+            </label>
+
+            <p class="login-option">
+                ¿No estas registrado?
+                <a href="../Register/register.html">Registrate</a>
+            </p>
+
+            <button class="login-btn" type="button" id="btnSubmit">Log in</button>
+
+
+        </form>
+
+        <div class="cartel-login-error "></div>
+
+        <div class="cartel-login-succes flex-columm"></div>
+
+
+    </div>
+
+
+
+    <script src="../JS/login.js"></script>
+
+</body>
+
+</html>

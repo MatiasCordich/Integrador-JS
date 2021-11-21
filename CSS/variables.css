@@ -1,0 +1,73 @@
+/********************** Fuente *********************/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+
+/********************** Variables *********************/
+:root{
+    --blanco: #edf2f4;
+    --gris: #8d99ae;
+    --azul: #2b2d42;
+    --rojoSuave: #ef233c;
+    --rojo: #d90429;
+}
+/********************** Globales *********************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--blanco);
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--azul);
+}
+
+li {
+    list-style: none;
+}
+
+/********************* Utilidades *********************/
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-columm{
+    flex-direction: column;
+}

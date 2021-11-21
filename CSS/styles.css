@@ -1,0 +1,311 @@
+@import url(../CSS/variables.css);
+
+/********************* Global *********************/
+.wrapper{
+    max-width: 140rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu-links,
+.login-btn,
+.register-btn{
+    display: none;
+}
+
+/* ******************************* CSS - MOBILE ******************************* */
+
+/* Header */
+
+.navbar__logo{
+    padding: 1rem;
+}
+
+.logo{
+    gap: 1.2rem;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    color: var(--azul);
+}
+
+.bx-world{
+    font-size: 2.5rem;
+    color: var(--rojoSuave);
+}
+
+/* Boton Hamburguesa */
+
+.menu-btn{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger,
+.menu-btn__burger::before,
+.menu-btn__burger::after{
+    width: 2.5rem;
+    height: .24rem;
+    background-color: var(--azul);
+    border-radius: 90rem;
+    transition: all .5s ease-in-out
+    
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after{
+    content: '';
+    position:absolute;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-9px)
+}
+
+.menu-btn__burger::after {
+    transform: translateY(9px)
+}
+
+
+/* Boton cerrar menú */
+
+.close-menu{
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.close-menu__btn::before,
+.close-menu__btn::after{
+    position: absolute;
+    content: '';
+    width: 2rem;
+    height: .24rem;
+    background-color: #fff;
+    border-radius: 90rem;
+    transition: all .5s ease-in-out
+}
+
+.close-menu__btn::after{
+    transform: translateY(9px);
+    transform: rotate(45deg)
+}
+
+.close-menu__btn::before{
+    transform: rotate(-45deg);
+}
+
+/* Navbar dinamico */
+
+nav .navbar__menu li a {
+    display: inline-block;
+    padding: 1.5rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+}
+
+nav .navbar__menu li .login-btn,
+nav .navbar__menu li .register-btn{
+    padding: 1rem 2rem;
+    color: var(--blanco);
+    border-radius: 1rem;
+    font-weight: 500;
+    background-color: var(--rojoSuave)
+}
+
+
+
+nav .navbar__menu li a:hover{
+    color: var(--rojoSuave);
+    transition: all .6s ease;
+}
+
+nav .navbar__menu {
+    height: 100vh;
+    width: 100vw;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    background: var(--azul);
+    transition: top 1s ease;
+    display: none;
+    gap: 2rem;
+}
+
+nav .navbar__menu .close-menu {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: 85%;
+}
+
+
+/* Main */
+
+.main{
+    gap: 2rem;
+    height: 47rem;
+    padding: .5rem;
+}
+
+.main > * {
+    padding: .5rem;
+}
+
+.main__title{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+    color: var(--azul);
+}
+
+.main__text{
+    text-align: center;
+    font-weight: 500;
+    line-height: 3rem;
+    width: 80%;
+}
+
+.main__btn{
+    background-color: var(--rojoSuave);
+    padding: .5rem 2.3rem;
+    border-radius: .4rem;
+    color: var(--blanco);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.main__btn:hover{
+    background: var(--rojo);
+    transition: all .6s ease-in-out;    
+}
+
+/* About */
+
+.about{
+    margin-top: 5rem;
+    padding: .5rem;
+}
+
+.about__title{
+    font-size: 5.3rem;
+    text-align: center;
+    font-weight: 900;
+    color: var(--azul);
+    margin: 2rem 0;
+}
+
+.about__text{
+    text-align: center;
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--azul);
+    height: 20rem;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.footer > *,
+.footer-copytext a{
+    color: var(--blanco);
+}
+
+.footer-copytext{
+    letter-spacing: .2rem;
+}
+
+
+
+/* ******************************* CSS - TABLET ******************************* */
+
+@media (min-width: 660px) {
+
+    .menu-btn,
+    ul .navbar__menu{
+        display: none;
+    }
+
+    .menu-links,
+    .login-btn,
+    .register-btn{
+        display: block;
+        letter-spacing: .2rem;
+        font-weight: 900;
+    }
+
+    .login-btn,
+    .register-btn{
+        background-color: var(--rojoSuave);
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        color: var(--blanco);
+        cursor: pointer;
+        
+    }
+
+    .navbar{
+        height: 9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .navbar__logo{
+        padding: 0;
+    }
+
+    .menu-links{
+        display: flex;
+    }
+
+    .menu-options{
+        gap: 1rem;
+    }
+
+    .main__title{
+        font-size: 5rem;
+    }
+
+    .about__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .about__text{
+        width: 50%;
+    }
+}
+/* ******************************* CSS - DESKTOP ******************************* */
+
+@media (min-width: 1024px) {
+    .navbar{
+        justify-content: space-around;
+    }
+
+    .menu-links{
+        gap: 5rem;
+    }
+
+    .about__content{
+        gap: 2.5rem;
+    }
+}
